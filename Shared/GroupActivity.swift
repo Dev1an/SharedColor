@@ -30,7 +30,8 @@ struct ColorSharing: GroupActivity {
     var metadata: GroupActivityMetadata = {
         var metaBuilder = GroupActivityMetadata()
         metaBuilder.type = .generic
-        metaBuilder.title = "Color sharing"
+        metaBuilder.title = "Theo watch party"
+        metaBuilder.fallbackURL = URL(string: "https://theoplayershareplay.thijslowette.repl.co")
         return metaBuilder
     }()
 }

@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import AVKit
 
-let player = AVPlayer(url: URL(string: "https://cdn.theoplayer.com/video/big_buck_bunny/big_buck_bunny.m3u8")!)
+let player = AVPlayer(url: URL(string: "https://content.uplynk.com/6be330b6e6574a729c3bb4baf3e0cbb0.m3u8")!)
 
 struct ContentView: View {
     @StateObject var model = ColorModel()
