@@ -13,6 +13,12 @@
 		74C4CCCF27A3F0BC00388B1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCBD27A3F0B500388B1E /* ContentView.swift */; };
 		74C4CCD027A3F0BC00388B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C4CCBE27A3F0BC00388B1E /* Assets.xcassets */; };
 		74C4CCD127A3F0BC00388B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C4CCBE27A3F0BC00388B1E /* Assets.xcassets */; };
+		74C4CCDC27A41B3700388B1E /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCDB27A41B3700388B1E /* Color+Codable.swift */; };
+		74C4CCDD27A41B3700388B1E /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCDB27A41B3700388B1E /* Color+Codable.swift */; };
+		74C4CCDF27A41B8100388B1E /* GroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCDE27A41B8100388B1E /* GroupActivity.swift */; };
+		74C4CCE027A41B8100388B1E /* GroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCDE27A41B8100388B1E /* GroupActivity.swift */; };
+		74C4CCE227A41BE800388B1E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCE127A41BE800388B1E /* Model.swift */; };
+		74C4CCE327A41BE800388B1E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CCE127A41BE800388B1E /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,10 @@
 		74C4CCC327A3F0BC00388B1E /* TheoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C4CCC927A3F0BC00388B1E /* TheoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C4CCCB27A3F0BC00388B1E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		74C4CCDA27A3F2C100388B1E /* TheoPlay (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TheoPlay (iOS).entitlements"; sourceTree = "<group>"; };
+		74C4CCDB27A41B3700388B1E /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		74C4CCDE27A41B8100388B1E /* GroupActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivity.swift; sourceTree = "<group>"; };
+		74C4CCE127A41BE800388B1E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 		74C4CCB627A3F0B500388B1E = {
 			isa = PBXGroup;
 			children = (
+				74C4CCDA27A3F2C100388B1E /* TheoPlay (iOS).entitlements */,
 				74C4CCBB27A3F0B500388B1E /* Shared */,
 				74C4CCCA27A3F0BC00388B1E /* macOS */,
 				74C4CCC427A3F0BC00388B1E /* Products */,
@@ -56,6 +67,9 @@
 			children = (
 				74C4CCBC27A3F0B500388B1E /* TheoPlayApp.swift */,
 				74C4CCBD27A3F0B500388B1E /* ContentView.swift */,
+				74C4CCE127A41BE800388B1E /* Model.swift */,
+				74C4CCDE27A41B8100388B1E /* GroupActivity.swift */,
+				74C4CCDB27A41B3700388B1E /* Color+Codable.swift */,
 				74C4CCBE27A3F0BC00388B1E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,7 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C4CCE227A41BE800388B1E /* Model.swift in Sources */,
+				74C4CCDF27A41B8100388B1E /* GroupActivity.swift in Sources */,
 				74C4CCCE27A3F0BC00388B1E /* ContentView.swift in Sources */,
+				74C4CCDC27A41B3700388B1E /* Color+Codable.swift in Sources */,
 				74C4CCCC27A3F0BC00388B1E /* TheoPlayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C4CCE327A41BE800388B1E /* Model.swift in Sources */,
+				74C4CCE027A41B8100388B1E /* GroupActivity.swift in Sources */,
 				74C4CCCF27A3F0BC00388B1E /* ContentView.swift in Sources */,
+				74C4CCDD27A41B3700388B1E /* Color+Codable.swift in Sources */,
 				74C4CCCD27A3F0BC00388B1E /* TheoPlayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TheoPlay (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7TD9A665TC;
@@ -339,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TheoPlay (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7TD9A665TC;
