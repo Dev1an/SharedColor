@@ -7,12 +7,17 @@
 
 import SwiftUI
 import Combine
+import AVKit
+
+let player = AVPlayer(url: URL(string: "https://cdn.theoplayer.com/video/big_buck_bunny/big_buck_bunny.m3u8")!)
 
 struct ContentView: View {
     @StateObject var model = ColorModel()
     
     var body: some View {
-        VStack {            
+        VStack {
+            VideoPlayer(player: player)
+            
             ColorPicker("Color", selection: $model.color)
             
             Button("Start sharing") {
@@ -20,7 +25,7 @@ struct ContentView: View {
                     do {
                         _ = try await ColorSharing().activate()
                     } catch {
-                        print("Failed to activate DrawTogether activity: \(error)")
+                        print("Failed to activate activity: \(error)")
                     }
                 }
             }
@@ -29,6 +34,7 @@ struct ContentView: View {
         .task {
             for await session in ColorSharing.sessions() {
                 model.attach(groupActivitySession: session)
+                player.playbackCoordinator.coordinateWithSession(session)
             }
         }
     }
